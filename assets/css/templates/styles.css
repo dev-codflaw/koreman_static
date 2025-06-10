@@ -1,0 +1,78 @@
+@import url("partials/top-info-bar.css"); 
+@import url("blocks/hero-section.css"); 
+@import url("blocks/cg-models.css");
+@import url("blocks/links-all-pages.css"); 
+@import url("partials/link-to-home.css"); 
+@import url("partials/footer.css"); 
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #1A1A1A; /* Dark background for elegance */
+    color: #E0E0E0; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust body padding to prevent overlap */
+body {
+    padding-top: 40px; /* Prevent content from being hidden under the sticky header */
+    padding-bottom: 100px; /* Prevent overlap with footer */
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+    font-size: 2rem; /* Or whatever size fits your design */
+    font-weight: bold;
+}
+
+
+.watermark-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .watermark-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .watermark-text {
+    position: absolute;
+    bottom: 120px;
+    right: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    background: rgb(5 42 91 / 60%);
+    padding: 25px 20px;
+    border-radius: 3px;
+  }
+
+  .blog-content {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 20px 0;
+  }
+  
+  .blog-content h2 {
+      color: #095D90;
+      margin-bottom: 15px;
+      text-align: center;
+  }
+  
+  .blog-content p {
+      margin-bottom: 15px;
+  }
+  
+
+  h2 {
+      margin-bottom: 20px;
+      text-align: center;
+  }

@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --primary-color: #ff6b8b;
+    --secondary-color: #a865c9;
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-hover-color: #ff8ca4;
+
+    /* Fonts */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Effects */
+    --transition: all 0.3s ease;
+    --shadow-light: 0 3px 8px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 12px 30px rgba(0, 0, 0, 0.4);
+}

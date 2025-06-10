@@ -1,0 +1,22 @@
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: #ff1a53;
+    transform: translateY(-3px);
+}
+
+.card {
+    background-color: #252525;
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    padding: 20px;
+    margin: 20px 0;
+}

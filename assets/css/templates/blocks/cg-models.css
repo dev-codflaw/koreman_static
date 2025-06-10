@@ -1,0 +1,135 @@
+/* Dark theme with seductive colors for profile cards */
+
+  .donkey-list {
+    padding: 25px 15px;
+    background-color: #1e1e1e;
+  }
+  .donkey-list h2 {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .donkey-list h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #ff6b8b, #a865c9);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .donkey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .donkey-card {
+    background-color: #252525;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+  }
+  
+  .donkey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 107, 139, 0.2);
+    border-color: #ff6b8b;
+  }
+  
+  .pop-block-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    aspect-ratio: 2/3;
+    transition: all 0.5s ease;
+  }
+  
+  .donkey-card:hover .pop-block-image {
+    filter: brightness(1.1);
+  }
+  
+  .profile-info {
+    padding: 18px;
+  }
+  
+  .donkey-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 15px 0;
+    color: #ff6b8b;
+    font-weight: 600;
+  }
+  
+  .profile-detail {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: #a865c9;
+    width: 80px;
+    flex-shrink: 0;
+  }
+  
+  .detail-value {
+    color: #e0e0e0;
+  }
+  
+  .availability {
+    display: inline-block;
+    background-color: rgba(19, 115, 51, 0.2);
+    color: #4ade80;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 0 8px rgba(74, 222, 128, 0.2);
+  }
+  
+  .unavailable {
+    background-color: rgba(197, 34, 31, 0.2);
+    color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.2);
+  }
+  
+  .no-profiles {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    font-style: italic;
+  }
+  
+  /* Mobile-first adjustments */
+  @media (max-width: 600px) {
+    .donkey-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .donkey-list {
+      padding: 15px 10px;
+    }
+    
+    .donkey-list h2 {
+      font-size: 1.5rem;
+    }
+    
+    .donkey-card h3 {
+      font-size: 1.1rem;
+    }
+  }

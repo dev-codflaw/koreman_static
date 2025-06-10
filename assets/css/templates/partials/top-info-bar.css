@@ -1,0 +1,88 @@
+/* Dark and seductive sticky header */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 107, 139, 0.1);
+  border-bottom: 1px solid rgba(255, 107, 139, 0.3);
+  font-size: 1rem;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+.sticky-header a.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #ff6b8b, #a865c9);
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-header a.home-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 107, 139, 0.4);
+}
+
+.sticky-header .contact-text {
+  font-weight: 500;
+  margin-right: 8px;
+  color: #a0a0a0;
+}
+
+.sticky-header a.phone-link {
+  color: #ff6b8b;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 3px 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sticky-header a.phone-link:hover {
+  background-color: rgba(255, 107, 139, 0.1);
+  color: #ff8ca4;
+}
+
+.sticky-header a.phone-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ff6b8b, #a865c9);
+  transition: width 0.3s ease;
+}
+
+.sticky-header a.phone-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .sticky-header {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .sticky-header a.home-link {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+}

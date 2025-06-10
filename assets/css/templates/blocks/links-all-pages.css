@@ -1,0 +1,97 @@
+  .pages-section {
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  .page-links {
+    text-align: center;
+  }
+  .page-links .links-heading {
+    font-size: 1.5rem;
+    font-weight: 600 ;
+    margin-bottom: 20px;
+    color: #ebe8e8;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .page-links .links-heading:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #73a5c6, #9dbeb9);
+    bottom: 0;
+    left: 20%;
+  }
+
+  .page-links h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ebe8e8;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .page-links h4:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #73a5c6, #9dbeb9);
+    bottom: 0;
+    left: 20%;
+  }
+  
+  .page-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .page-link-item {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .page-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Alternating colors for links */
+  .page-link-item:nth-child(4n+1) .page-link {
+    background-color: #5b9bd5;
+  }
+  
+  .page-link-item:nth-child(4n+2) .page-link {
+    background-color: #70ad47;
+  }
+  
+  .page-link-item:nth-child(4n+3) .page-link {
+    background-color: #ed7d31;
+  }
+  
+  .page-link-item:nth-child(4n+4) .page-link {
+    background-color: #9b6bb5;
+  }
+  
+  .page-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  }

@@ -1,0 +1,48 @@
+
+  .back-home-container {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 900px;
+  }
+  
+  .back-home-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #73a5c6, #9dbeb9);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .back-home-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .back-home-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-home-link:hover:before {
+    opacity: 1;
+  }
+  
+  .back-arrow {
+    margin-right: 8px;
+    font-size: 20px;
+  }
